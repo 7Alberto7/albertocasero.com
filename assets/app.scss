@@ -5,8 +5,12 @@ $warning: #ff9800;
 $danger: #a2253b;
 $info: #2eccb0;
 
-#home {
-  height: 100%;
+#home,
+#projects,
+#skills,
+#experience,
+#contact {
+  height: 100vh;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
