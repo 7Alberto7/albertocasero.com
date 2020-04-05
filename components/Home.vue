@@ -27,3 +27,9 @@
     </b-container>
   </div>
 </template>
+<style lang="scss" scoped>
+  div#home {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../static/img/portada.jpg') center 75% no-repeat;
+    background-size: cover;
+  }
+</style>
