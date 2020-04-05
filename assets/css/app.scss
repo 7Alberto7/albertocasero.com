@@ -5,6 +5,10 @@ $warning: #ff9800;
 $danger: #a2253b;
 $info: #2eccb0;
 
+:export {
+  primary: $primary
+}
+
 #home,
 #projects,
 #skills,
@@ -17,5 +21,9 @@ $info: #2eccb0;
 $font-family-sans-serif: "Work Sans", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base: 0.75rem;
 
+//Bootstrap
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
+//Vue-fab dependencies
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
