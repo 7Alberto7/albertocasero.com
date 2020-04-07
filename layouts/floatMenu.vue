@@ -52,7 +52,8 @@ export default {
         {
           name: 'goToContact',
           icon: 'alternate_email',
-          tooltip: 'Contacto'
+          tooltip: 'Contacto',
+          color: '#a2253b'
         }
       ]
     }
