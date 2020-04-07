@@ -1,29 +1,17 @@
 <template>
   <div id="home">
     <b-container>
-      <b-nav align="center">
-        <b-nav-item active @click="$scrollTo('#home')">
-          Portada
-        </b-nav-item>
-        <b-nav-item @click="$scrollTo('#projects')">
-          Proyectos
-        </b-nav-item>
-        <b-nav-item @click="$scrollTo('#skills')">
-          Conocimiento
-        </b-nav-item>
-        <b-nav-item @click="$scrollTo('#experience')">
-          Experiencia
-        </b-nav-item>
-        <b-nav-item @click="$scrollTo('#contact')">
-          Contacto
-        </b-nav-item>
-      </b-nav>
-      <h1 class="text-center">
-        Alberto Casero
+      <h1 v-if="$info.presentation" class="text-center text-white pt-5">
+        {{ $info.presentation.name }}
       </h1>
-      <h2 class="text-center">
-        Ingeniero Web
+      <h2 v-if="$info.presentation" class="text-center text-white">
+        {{ $info.presentation.description }}
       </h2>
+      <div class="d-flex align-items-end">
+        <h3 v-if="$info.presentation" class="text-white">
+          {{ $info.presentation.presentation_text }}
+        </h3>
+      </div>
     </b-container>
   </div>
 </template>
