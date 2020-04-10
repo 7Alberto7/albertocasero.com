@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <section id="home">
     <b-container fluid>
       <b-row>
         <b-col
@@ -26,11 +26,11 @@
         </b-col>
       </b-row>
     </b-container>
-  </div>
+  </section>
 </template>
 <style lang="scss" scoped>
-  div#home {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/img/app/portada.jpg') center 75% no-repeat;
+  section#home {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/app/portada.jpg') center 75% no-repeat;
     background-size: cover;
   }
   .jumbotron {

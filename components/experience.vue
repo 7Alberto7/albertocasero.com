@@ -1,11 +1,9 @@
 <template>
-  <div id="experience">
-    <b-row>
-      <b-col>
-        <h1 class="text-center">
-          Experiencia
-        </h1>
-      </b-col>
-    </b-row>
-  </div>
+  <section id="experience">
+    <b-container fluid>
+      <h1 class="section-title">
+        Experiencia
+      </h1>
+    </b-container>
+  </section>
 </template>

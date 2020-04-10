@@ -3,18 +3,10 @@ $secondary: #434456;
 $success: #2579a2;
 $warning: #ff9800;
 $danger: #a2253b;
-$info: #2eccb0;
+$info: #acece0;
 
 :export {
   primary: $primary
-}
-
-#home,
-#projects,
-#skills,
-#experience,
-#contact {
-  height: 100vh;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
@@ -27,3 +19,33 @@ $font-size-base: 0.75rem;
 //Vue-fab dependencies
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
+
+body {
+  color: $secondary;
+  section {
+    height: 100vh;
+    padding-top: 2rem;
+    &:nth-of-type(odd) {
+      background-color: $white;
+      h1.section-title {
+        text-align: center;
+        text-decoration: underline solid $primary 4px;
+      }
+    }
+    &:nth-of-type(even) {
+      background-color: $light;
+      h1.section-title {
+        text-align: center;
+        text-decoration: underline solid $primary 4px;
+      }
+    }
+    &:last-of-type() {
+      background-color: $danger;
+      h1.section-title {
+        color: $white;
+        text-align: center;
+        text-decoration: underline solid $primary 4px;
+      }
+    }
+  }
+}

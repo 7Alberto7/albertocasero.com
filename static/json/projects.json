@@ -9,7 +9,7 @@
     "skills": [],
 		"url": "http://entrenos.desabi.es",
 		"resources": [
-		    {"url": "https://www.youtube.com/watch?v=YZ5fpJZsjHk", "type": "Youtube"}
+		    {"url": "https://www.youtube.com/watch?v=YZ5fpJZsjHk", "type": "youtube"}
 		]
 	},
 	{
@@ -22,7 +22,7 @@
     "skills": [],
 		"url": "https://play.google.com/store/apps/details?id=com.inactec.score",
 		"resources": [
-		    {"url": "https://github.com/7Alberto7/Score", "type": "Github"}
+		    {"url": "https://github.com/7Alberto7/Score", "type": "github"}
 		]
 	},
 	{
@@ -35,7 +35,7 @@
     "skills": [],
 		"url": "https://play.google.com/store/apps/details?id=com.inactec.score",
 		"resources": [
-		    {"url": "https://github.com/7Alberto7/Score", "type": "Github"}
+		    {"url": "https://github.com/7Alberto7/Score", "type": "github"}
 		]
 	},
 	{
@@ -59,8 +59,8 @@
     "skills": [],
 		"url": "",
 		"resources": [
-      {"url": "https://github.com/7Alberto7/pfmweb", "type": "Github"},
-      {"url": "https://www.youtube.com/watch?v=IAdDdWE1VVA", "type": "Youtube"}
+      {"url": "https://github.com/7Alberto7/pfmweb", "type": "github"},
+      {"url": "https://www.youtube.com/watch?v=IAdDdWE1VVA", "type": "youtube"}
     ]
 	},
 	{
@@ -73,8 +73,8 @@
     "skills": [],
 		"url": "",
 		"resources": [
-      {"url": "https://github.com/7Alberto7/pfmandroid", "type": "Github"},
-      {"url": "https://www.youtube.com/watch?v=Knv3nlJvhcY", "type": "Youtube"}
+      {"url": "https://github.com/7Alberto7/pfmandroid", "type": "github"},
+      {"url": "https://www.youtube.com/watch?v=Knv3nlJvhcY", "type": "youtube"}
     ]
 	},
 	{

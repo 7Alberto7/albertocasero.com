@@ -1,11 +1,9 @@
 <template>
-  <div id="contact">
-    <b-row>
-      <b-col>
-        <h1 class="text-center">
-          Contacto
-        </h1>
-      </b-col>
-    </b-row>
-  </div>
+  <section id="contact">
+    <b-container fluid>
+      <h1 class="section-title">
+        Contacto
+      </h1>
+    </b-container>
+  </section>
 </template>
