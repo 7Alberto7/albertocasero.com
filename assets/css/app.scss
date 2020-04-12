@@ -23,7 +23,7 @@ $font-size-base: 0.75rem;
 body {
   color: $secondary;
   section {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 2rem;
     &:nth-of-type(odd) {
       background-color: $white;

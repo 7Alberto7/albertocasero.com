@@ -1,7 +1,7 @@
 <template>
   <b-card
     :title="project.name"
-    :img-src="project.image"
+    :img-src="'/img/projects/'+project.image"
     :img-alt="project.name"
     img-top
     tag="article"
@@ -13,7 +13,10 @@
     <b-card-text>
       {{ project.description }}
     </b-card-text>
-    <template v-slot:footer>
+    <template
+      v-if="project.url || project.resources.length > 0"
+      v-slot:footer
+    >
       <b-link
         v-if="project.url"
         :href="project.url"
