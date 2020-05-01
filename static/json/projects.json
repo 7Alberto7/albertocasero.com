@@ -6,7 +6,7 @@
     "relevance": 1,
     "created_at": "2013",
     "finished_at": "2013",
-    "skills": [],
+    "skills": ["Kanban", "MySQL", "Php", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "jQuery"],
 		"url": "http://entrenos.desabi.es",
 		"resources": [
 		    {"url": "https://www.youtube.com/watch?v=YZ5fpJZsjHk", "type": "youtube"}
@@ -19,7 +19,7 @@
     "relevance": 2,
     "created_at": "2013",
     "finished_at": "2013",
-    "skills": [],
+    "skills": ["Android"],
 		"url": "https://play.google.com/store/apps/details?id=com.inactec.score",
 		"resources": [
 		    {"url": "https://github.com/7Alberto7/Score", "type": "github"}
@@ -32,7 +32,7 @@
     "relevance": 3,
     "created_at": "2013",
     "finished_at": "2013",
-    "skills": [],
+    "skills": ["Android"],
 		"url": "https://play.google.com/store/apps/details?id=com.inactec.score",
 		"resources": [
 		    {"url": "https://github.com/7Alberto7/Score", "type": "github"}
@@ -47,7 +47,7 @@
     "finished_at": "2014",
     "skills": [],
 		"url": "http://electronicalosdel.com",
-		"resources": []
+		"resources": ["Php", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "jQuery", "SEO"]
 	},
 	{
     "name": "WePlay Web",
@@ -56,7 +56,7 @@
     "relevance": 5,
     "created_at": "2014",
     "finished_at": "2014",
-    "skills": [],
+    "skills": ["Scrum", "Git", "MongoDB", "Php", "Symfony", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "jQuery"],
 		"url": "",
 		"resources": [
       {"url": "https://github.com/7Alberto7/pfmweb", "type": "github"},
@@ -70,7 +70,7 @@
     "relevance": 6,
     "created_at": "2014",
     "finished_at": "2014",
-    "skills": [],
+    "skills": ["Scrum", "Android"],
 		"url": "",
 		"resources": [
       {"url": "https://github.com/7Alberto7/pfmandroid", "type": "github"},
@@ -84,7 +84,7 @@
     "relevance": 7,
     "created_at": "2014",
     "finished_at": "2014",
-    "skills": [],
+    "skills": ["Git", "MySQL", "Php", "Symfony", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "jQuery"],
 		"url": "",
 		"resources": []
 	},
@@ -95,7 +95,7 @@
     "relevance": 8,
     "created_at": "2014",
     "finished_at": "2020",
-    "skills": [],
+    "skills": ["Kanban", "Git", "MySQL", "Redis", "Php", "Symfony", "Linux", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "jQuery", "SEO", "Analytics"],
 		"url": "https://www.mcr.com.es",
 		"resources": []
 	},
@@ -106,7 +106,7 @@
     "relevance": 9,
     "created_at": "2015",
     "finished_at": "2020",
-    "skills": [],
+    "skills": ["Kanban", "Git", "MySQL", "Php", "Linux", "HTML 5", "CSS 3"],
 		"url": "https://www.openmcr.com.es",
 		"resources": []
 	},
@@ -117,7 +117,7 @@
     "relevance": 10,
     "created_at": "2016",
     "finished_at": "2020",
-    "skills": [],
+    "skills": ["Git", "HTML 5", "CSS 3", "Angular"],
 		"url": "",
 		"resources": []
 	},
@@ -128,7 +128,7 @@
     "relevance": 11,
     "created_at": "2019",
     "finished_at": "2020",
-    "skills": [],
+    "skills": ["Kanban", "Git", "MySQL", "Redis", "Php", "Symfony", "Linux", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "jQuery", "SEO", "Analytics"],
 		"url": "https://www.mcr.com.es",
 		"resources": []
 	},
@@ -139,7 +139,7 @@
     "relevance": 12,
     "created_at": "2019",
     "finished_at": "2020",
-    "skills": [],
+    "skills": ["Kanban", "Git", "MySQL", "Redis", "Php", "Symfony", "Linux", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "jQuery", "SEO", "Analytics"],
 		"url": "https://www.abmaterials.es",
 		"resources": []
 	},
@@ -150,7 +150,7 @@
     "relevance": 13,
     "created_at": "2020",
     "finished_at": "?",
-    "skills": [],
+    "skills": ["Kanban", "Git", "Linux", "HTML 5", "SASS", "Bootstrap", "Nuxt"],
 		"url": "https://www.albertocasero.com",
 		"resources": []
 	},
@@ -161,7 +161,7 @@
     "relevance": 14,
     "created_at": "2020",
     "finished_at": "?",
-    "skills": [],
+    "skills": ["Scrum", "Git", "MySQL", "Php", "Laravel", "Linux", "HTML 5", "SASS", "Bootstrap", "Vuejs", "Nuxt", "SEO", "Analytics"],
 		"url": "",
 		"resources": []
 	}
