@@ -42,7 +42,7 @@
     "currently": false
   },
   {
-    "name": "Php",
+    "name": "PHP",
     "image": "php.png",
     "description": "La gran mayoría de los desarrollos que he hecho en aplicaciones web han sido con el lenguaje de programación PHP.",
     "level_of_knowledge": 5,
