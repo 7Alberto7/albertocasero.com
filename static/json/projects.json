@@ -119,7 +119,9 @@
     "finished_at": "2020",
     "skills": ["Git", "HTML 5", "CSS 3", "Angular"],
 		"url": "",
-		"resources": []
+		"resources": [
+      {"url": "https://github.com/7Alberto7/PersonalPortfolio", "type": "github"}
+    ]
 	},
 	{
     "name": "MCR Pro",
@@ -152,7 +154,9 @@
     "finished_at": "?",
     "skills": ["Kanban", "Git", "Linux", "HTML 5", "SASS", "Bootstrap", "Nuxtjs"],
 		"url": "https://www.albertocasero.com",
-		"resources": []
+		"resources": [
+      {"url": "https://github.com/7Alberto7/albertocasero.com", "type": "github"}
+    ]
 	},
 	{
     "name": "MCR 2.0",
