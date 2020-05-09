@@ -6,6 +6,7 @@
     <skills />
     <experience />
     <contact />
+    <email-modal />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Projects from '~/components/projects.vue'
 import Skills from '~/components/skills.vue'
 import Experience from '~/components/experience.vue'
 import Contact from '~/components/contact.vue'
+import EmailModal from '~/layouts/emailModal.vue'
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     Projects,
     Skills,
     Experience,
-    Contact
+    Contact,
+    EmailModal
   }
 }
 </script>

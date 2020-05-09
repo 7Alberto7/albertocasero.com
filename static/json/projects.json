@@ -151,7 +151,7 @@
     "description": "Página personal que sirve para presentarme, junto con mis proyectos y mis habilidades.",
     "relevance": 13,
     "created_at": "2020",
-    "finished_at": "?",
+    "finished_at": "2020",
     "skills": ["Kanban", "Git", "Linux", "HTML 5", "SASS", "Bootstrap", "Nuxtjs"],
 		"url": "https://www.albertocasero.com",
 		"resources": [

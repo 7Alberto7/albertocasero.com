@@ -10,7 +10,7 @@
       @goToProjects="goToProjects"
       @goToSkills="goToSkills"
       @goToExperience="goToExperience"
-      @goToContact="goToContact"
+      @contactMe="contactMe"
     />
   </div>
 </template>
@@ -50,9 +50,9 @@ export default {
           tooltip: 'Experiencia'
         },
         {
-          name: 'goToContact',
+          name: 'contactMe',
           icon: 'alternate_email',
-          tooltip: 'Contacto',
+          tooltip: 'Contacta conmigo',
           color: '#a2253b'
         }
       ]
@@ -71,8 +71,8 @@ export default {
     goToExperience () {
       this.$scrollTo('#experience')
     },
-    goToContact () {
-      this.$scrollTo('#contact')
+    contactMe () {
+      this.$bvModal.show('email-modal')
     }
   }
 }

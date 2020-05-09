@@ -41,6 +41,8 @@ body {
     }
     &:last-of-type() {
       background-color: $danger;
+      min-height: auto;
+      padding-bottom: 2rem;
       h1.section-title {
         color: $white;
         text-align: center;

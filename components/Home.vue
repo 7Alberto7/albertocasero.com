@@ -19,7 +19,7 @@
               </h1>
             </template>
             <p>{{ $info.presentation.presentation_text }}</p>
-            <b-button size="lg" variant="danger" @click="$scrollTo('#contact')">
+            <b-button size="lg" variant="danger" @click="contactMe">
               Contacta conmigo
             </b-button>
           </b-jumbotron>
@@ -28,6 +28,15 @@
     </b-container>
   </section>
 </template>
+<script>
+export default {
+  methods: {
+    contactMe () {
+      this.$bvModal.show('email-modal')
+    }
+  }
+}
+</script>
 <style lang="scss" scoped>
   section#home {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/app/portada.jpg') center 75% no-repeat;
