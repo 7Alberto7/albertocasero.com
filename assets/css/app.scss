@@ -41,11 +41,8 @@ body {
     }
     &:last-of-type() {
       background-color: $danger;
-      h1.section-title {
-        color: $white;
-        text-align: center;
-        text-decoration: underline solid $primary 4px;
-      }
+      min-height: auto;
+      padding-bottom: 2rem;
     }
   }
 }
