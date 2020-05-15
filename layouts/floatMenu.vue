@@ -10,7 +10,6 @@
       @goToProjects="goToProjects"
       @goToSkills="goToSkills"
       @goToExperience="goToExperience"
-      @goToContact="goToContact"
     />
   </div>
 </template>
@@ -48,12 +47,6 @@ export default {
           name: 'goToExperience',
           icon: 'business_center',
           tooltip: 'Experiencia'
-        },
-        {
-          name: 'goToContact',
-          icon: 'alternate_email',
-          tooltip: 'Contacto',
-          color: '#a2253b'
         }
       ]
     }
@@ -70,9 +63,6 @@ export default {
     },
     goToExperience () {
       this.$scrollTo('#experience')
-    },
-    goToContact () {
-      this.$scrollTo('#contact')
     }
   }
 }

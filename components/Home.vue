@@ -19,9 +19,6 @@
               </h1>
             </template>
             <p>{{ $info.presentation.presentation_text }}</p>
-            <b-button size="lg" variant="danger" @click="$scrollTo('#contact')">
-              Contacta conmigo
-            </b-button>
           </b-jumbotron>
         </b-col>
       </b-row>
