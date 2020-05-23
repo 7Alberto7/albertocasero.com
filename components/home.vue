@@ -13,10 +13,8 @@
             bg-variant="transparent"
             text-variant="white"
           >
-            <template v-slot:header>
-              <h1 class="text-primary">
-                {{ $info.presentation.name }}
-              </h1>
+            <template v-slot:header class="text-primary">
+              {{ $info.presentation.name }}
             </template>
             <p>{{ $info.presentation.presentation_text }}</p>
           </b-jumbotron>
@@ -26,12 +24,14 @@
   </section>
 </template>
 <style lang="scss" scoped>
+  @import "assets/css/colors";
   section#home {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/app/portada.jpg') center 75% no-repeat;
     background-size: cover;
   }
   .jumbotron {
     h1 {
+      color: $primary;
       font-size: 4.5rem;
       font-weight: 300;
     }
