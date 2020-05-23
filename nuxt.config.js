@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 module.exports = {
   mode: 'universal',
@@ -14,7 +15,11 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap' },
+      /* Vue-fab dependencies */
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' }
     ]
   },
   /*
@@ -25,7 +30,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '@/assets/css/app.scss'
+    '@/assets/css/app.scss',
+    '@/assets/css/colors.scss'
   ],
   /*
   ** Plugins to load before mounting the App
