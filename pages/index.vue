@@ -25,6 +25,14 @@ export default {
     Skills,
     Experience,
     Contact
+  },
+  head () {
+    return {
+      title: 'Alberto Casero',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Soy Alberto Casero, máster en ingeniería web por la Universidad Politécnica de Madrid, con varios años de experiencia en gestión de proyectos y programación tanto en el lado cliente como en el servidor.' }
+      ]
+    }
   }
 }
 </script>
