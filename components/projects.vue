@@ -35,8 +35,17 @@ export default {
   },
   data () {
     return {
-      projects: this.$info.projects
+      projects: []
     }
+  },
+  created () {
+    this.$projectService.all()
+      .then((res) => {
+        this.projects = res.data.sort((a, b) => b.relevance - a.relevance)
+      })
+      .catch(() => {
+        this.projects = []
+      })
   }
 }
 </script>
