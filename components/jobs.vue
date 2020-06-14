@@ -8,17 +8,22 @@
           </h1>
         </b-col>
       </b-row>
-      <b-row>
-        <b-col
-          v-for="job in jobs"
-          :key="job.company"
-          cols="12"
-        >
-          <job-card
-            :job="job"
-          />
-        </b-col>
-      </b-row>
+      <b-overlay
+        :show="isLoaded"
+        variant="primary"
+      >
+        <b-row>
+          <b-col
+            v-for="job in jobs"
+            :key="job.company"
+            cols="12"
+          >
+            <job-card
+              :job="job"
+            />
+          </b-col>
+        </b-row>
+      </b-overlay>
     </b-container>
   </section>
 </template>
@@ -32,6 +37,11 @@ export default {
   data () {
     return {
       jobs: []
+    }
+  },
+  computed: {
+    isLoaded () {
+      return !this.jobs.length
     }
   },
   created () {
