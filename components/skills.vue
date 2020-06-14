@@ -35,8 +35,17 @@ export default {
   },
   data () {
     return {
-      skills: this.$info.skills
+      skills: []
     }
+  },
+  created () {
+    this.$skillService.all()
+      .then((res) => {
+        this.skills = res.data.sort((a, b) => ((b.currently * 10) + b.level_of_knowledge) - ((a.currently * 10) + a.level_of_knowledge))
+      })
+      .catch(() => {
+        this.skills = []
+      })
   }
 }
 </script>
