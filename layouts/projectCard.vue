@@ -1,7 +1,7 @@
 <template>
   <b-card
     :title="project.name"
-    :img-src="getProjectImage(project.image)"
+    :img-src="getProjectImage(project._id)"
     :img-alt="project.name"
     img-top
     tag="article"
@@ -69,11 +69,11 @@ export default {
     }
   },
   methods: {
-    getProjectImage (name) {
-      return process.env.api_url + 'projects/' + name
+    getProjectImage (id) {
+      return process.env.api_url + 'projects/' + id + '/image'
     },
     getSkillImage (skillName) {
-      return process.env.api_url + 'skills/' + skillName
+      return process.env.api_url + 'skills/' + skillName + '/image-by-name'
     }
   }
 }
