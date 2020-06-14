@@ -1,5 +1,5 @@
 <template>
-  <section id="experience">
+  <section id="jobs">
     <b-container fluid>
       <b-row class="pb-4">
         <b-col>
@@ -10,12 +10,12 @@
       </b-row>
       <b-row>
         <b-col
-          v-for="experience in experiences"
-          :key="experience.company"
+          v-for="job in jobs"
+          :key="job.company"
           cols="12"
         >
-          <experience-card
-            :experience="experience"
+          <job-card
+            :job="job"
           />
         </b-col>
       </b-row>
@@ -23,16 +23,25 @@
   </section>
 </template>
 <script>
-import ExperienceCard from '~/layouts/experienceCard.vue'
+import JobCard from '~/layouts/jobCard.vue'
 
 export default {
   components: {
-    ExperienceCard
+    JobCard
   },
   data () {
     return {
-      experiences: this.$info.experience
+      jobs: []
     }
+  },
+  created () {
+    this.$jobService.all()
+      .then((res) => {
+        this.jobs = res.data
+      })
+      .catch(() => {
+        this.jobs = []
+      })
   }
 }
 </script>

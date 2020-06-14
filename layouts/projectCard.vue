@@ -73,7 +73,7 @@ export default {
       return process.env.api_url + 'projects/' + name
     },
     getSkillImage (skillName) {
-      return '/img/skills/' + this.$info.skills.find(s => s.name === skillName).image
+      return process.env.api_url + 'skills/' + skillName
     }
   }
 }

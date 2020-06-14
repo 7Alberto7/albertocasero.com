@@ -38,7 +38,6 @@ module.exports = {
   */
   plugins: [
     '~/plugins/axios',
-    '~/plugins/load-info.js',
     '~/plugins/scroll-to.js',
     '~/plugins/services.js'
   ],

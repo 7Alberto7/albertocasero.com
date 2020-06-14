@@ -9,7 +9,7 @@
       @goHome="goHome"
       @goToProjects="goToProjects"
       @goToSkills="goToSkills"
-      @goToExperience="goToExperience"
+      @goToJob="goToJob"
     />
   </div>
 </template>
@@ -44,7 +44,7 @@ export default {
           tooltip: 'Conocimientos'
         },
         {
-          name: 'goToExperience',
+          name: 'goToJob',
           icon: 'business_center',
           tooltip: 'Experiencia'
         }
@@ -61,8 +61,8 @@ export default {
     goToSkills () {
       this.$scrollTo('#skills')
     },
-    goToExperience () {
-      this.$scrollTo('#experience')
+    goToJob () {
+      this.$scrollTo('#job')
     }
   }
 }
