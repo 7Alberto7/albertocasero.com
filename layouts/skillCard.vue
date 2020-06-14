@@ -10,7 +10,7 @@
   >
     <template v-slot:header>
       <b-card-title class="text-center">
-        <b-img :src="'/img/skills/'+skill.image" fluid :alt="skill.name" />
+        <b-img :src="getSkillImage(skill._id)" fluid :alt="skill.name" />
         <span class="ml-2">{{ skill.name.toUpperCase() }}</span>
       </b-card-title>
     </template>
@@ -28,6 +28,11 @@ export default {
     skill: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    getSkillImage (id) {
+      return process.env.api_url + 'skills/' + id + '/image'
     }
   }
 }
