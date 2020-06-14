@@ -5,19 +5,19 @@
   >
     <b-card-body>
       <b-card-title>
-        {{ experience.position }}
+        {{ job.position }}
         <b-badge
           class="float-right"
           variant="primary"
         >
-          {{ experience.begin_at + ' - ' + (experience.end_at != null ? experience.end_at : 'Actualmente') }}
+          {{ job.begin_at + ' - ' + (job.end_at != null ? job.end_at : 'Actualmente') }}
         </b-badge>
       </b-card-title>
       <b-card-sub-title>
-        {{ experience.company }}
+        {{ job.company }}
       </b-card-sub-title>
       <b-card-text>
-        {{ experience.description }}
+        {{ job.description }}
       </b-card-text>
     </b-card-body>
   </b-card>
@@ -25,7 +25,7 @@
 <script>
 export default {
   props: {
-    experience: {
+    job: {
       type: Object,
       required: true
     }

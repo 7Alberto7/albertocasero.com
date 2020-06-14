@@ -4,7 +4,7 @@
     <home />
     <projects />
     <skills />
-    <experience />
+    <job />
     <contact />
   </div>
 </template>
@@ -14,7 +14,7 @@ import FloatMenu from '~/layouts/floatMenu.vue'
 import Home from '~/components/home.vue'
 import Projects from '~/components/projects.vue'
 import Skills from '~/components/skills.vue'
-import Experience from '~/components/experience.vue'
+import Job from '~/components/jobs.vue'
 import Contact from '~/components/contact.vue'
 
 export default {
@@ -23,7 +23,7 @@ export default {
     Home,
     Projects,
     Skills,
-    Experience,
+    Job,
     Contact
   },
   head () {

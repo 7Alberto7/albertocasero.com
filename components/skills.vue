@@ -8,21 +8,26 @@
           </h1>
         </b-col>
       </b-row>
-      <b-row>
-        <b-col
-          v-for="skill in skills"
-          :key="skill.name"
-          cols="12"
-          sm="4"
-          md="4"
-          lg="4"
-          xl="3"
-        >
-          <skill-card
-            :skill="skill"
-          />
-        </b-col>
-      </b-row>
+      <b-overlay
+        :show="isLoaded"
+        variant="primary"
+      >
+        <b-row>
+          <b-col
+            v-for="skill in skills"
+            :key="skill.name"
+            cols="12"
+            sm="4"
+            md="4"
+            lg="4"
+            xl="3"
+          >
+            <skill-card
+              :skill="skill"
+            />
+          </b-col>
+        </b-row>
+      </b-overlay>
     </b-container>
   </section>
 </template>
@@ -35,8 +40,22 @@ export default {
   },
   data () {
     return {
-      skills: this.$info.skills
+      skills: []
     }
+  },
+  computed: {
+    isLoaded () {
+      return !this.skills.length
+    }
+  },
+  created () {
+    this.$skillService.all()
+      .then((res) => {
+        this.skills = res.data.sort((a, b) => ((b.currently * 10) + b.level_of_knowledge) - ((a.currently * 10) + a.level_of_knowledge))
+      })
+      .catch(() => {
+        this.skills = []
+      })
   }
 }
 </script>

@@ -8,15 +8,15 @@
           xl="4"
         >
           <b-jumbotron
-            :lead="$info.presentation.description"
+            lead="Ingeniero Web"
             lead-tag="h2"
             bg-variant="transparent"
             text-variant="white"
           >
             <template v-slot:header class="text-primary">
-              {{ $info.presentation.name }}
+              Alberto Casero
             </template>
-            <p>{{ $info.presentation.presentation_text }}</p>
+            <p>¡Bienvenido a mi página personal! Soy Alberto, máster en ingeniería web por la Universidad Politécnica de Madrid, con varios años de experiencia en gestión de proyectos y programación tanto en el lado cliente como en el servidor.</p>
           </b-jumbotron>
         </b-col>
       </b-row>

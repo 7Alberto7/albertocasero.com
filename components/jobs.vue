@@ -1,10 +1,10 @@
 <template>
-  <section id="projects">
+  <section id="jobs">
     <b-container fluid>
       <b-row class="pb-4">
         <b-col>
           <h1 class="section-title">
-            Proyectos
+            Experiencia
           </h1>
         </b-col>
       </b-row>
@@ -14,16 +14,12 @@
       >
         <b-row>
           <b-col
-            v-for="project in projects"
-            :key="project.name"
+            v-for="job in jobs"
+            :key="job.company"
             cols="12"
-            sm="6"
-            md="6"
-            lg="4"
-            xl="3"
           >
-            <project-card
-              :project="project"
+            <job-card
+              :job="job"
             />
           </b-col>
         </b-row>
@@ -32,29 +28,29 @@
   </section>
 </template>
 <script>
-import ProjectCard from '~/layouts/projectCard.vue'
+import JobCard from '~/layouts/jobCard.vue'
 
 export default {
   components: {
-    ProjectCard
+    JobCard
   },
   data () {
     return {
-      projects: []
+      jobs: []
     }
   },
   computed: {
     isLoaded () {
-      return !this.projects.length
+      return !this.jobs.length
     }
   },
   created () {
-    this.$projectService.all()
+    this.$jobService.all()
       .then((res) => {
-        this.projects = res.data.sort((a, b) => b.relevance - a.relevance)
+        this.jobs = res.data
       })
       .catch(() => {
-        this.projects = []
+        this.jobs = []
       })
   }
 }

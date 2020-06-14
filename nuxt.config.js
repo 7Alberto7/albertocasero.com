@@ -37,8 +37,9 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/axios',
     '~/plugins/scroll-to.js',
-    '~/plugins/load-info.js'
+    '~/plugins/services.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -57,6 +58,8 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    // Doc: https://axios.nuxtjs.org
+    '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     // Doc: https://www.npmjs.com/package/nuxt-fontawesome
@@ -79,6 +82,12 @@ module.exports = {
       ]
     }]
   ],
+  /*
+  ** Axios configuration
+  */
+  axios: {
+    baseURL: process.env.api_url
+  },
   /*
   ** Build configuration
   */
