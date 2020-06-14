@@ -8,21 +8,26 @@
           </h1>
         </b-col>
       </b-row>
-      <b-row>
-        <b-col
-          v-for="project in projects"
-          :key="project.name"
-          cols="12"
-          sm="6"
-          md="6"
-          lg="4"
-          xl="3"
-        >
-          <project-card
-            :project="project"
-          />
-        </b-col>
-      </b-row>
+      <b-overlay
+        :show="isLoaded"
+        variant="primary"
+      >
+        <b-row>
+          <b-col
+            v-for="project in projects"
+            :key="project.name"
+            cols="12"
+            sm="6"
+            md="6"
+            lg="4"
+            xl="3"
+          >
+            <project-card
+              :project="project"
+            />
+          </b-col>
+        </b-row>
+      </b-overlay>
     </b-container>
   </section>
 </template>
@@ -36,6 +41,11 @@ export default {
   data () {
     return {
       projects: []
+    }
+  },
+  computed: {
+    isLoaded () {
+      return !this.projects.length
     }
   },
   created () {
