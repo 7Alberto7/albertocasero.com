@@ -4,6 +4,7 @@ export default function ({ $axios, redirect }, inject) {
     config.headers['Access-Control-Allow-Origin'] = '*'
     config.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD'
     config.headers['Access-Control-Allow-Headers'] = 'Content-type'
+    return config
   }, (error) => {
     return Promise.reject(error)
   })
